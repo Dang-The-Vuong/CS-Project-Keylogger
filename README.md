@@ -17,8 +17,8 @@
        - The attacker need to give the application Gmail login credential in order for the program to work!
        - The program can sent message to any email(Yahoo, Yandex, Gmail, etc...)
    ### Installing
-       - Git:
-
+       - Git(Git application need to be install):
+            - Command: git clone https://github.com/dangvuonglcps/CS-Project-1.git
        - Download the file from source.
    ### Executing program
        - Make sure to have the dependencies ready.
@@ -26,4 +26,7 @@
        - To run the program, enter the command "python3 main.py"
 
 ## Output
-  The program should print out the log keys and also sent a text file of the log key to an attacker.
+       - The program should print out the log keys and also sent a text file of the log key to an attacker.
+
+## Note
+       - The progam demo was initually design to work with ProtonMail but it require dependencies like the ProtonMail Bridge application which is not convenient and not realistic.
