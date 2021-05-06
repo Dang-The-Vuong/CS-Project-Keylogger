@@ -1,18 +1,21 @@
 # CS-Project-1(Key-logger)
 
 ## Description
-
+    A program that monitor victim keystroke in the computer and store it in a file. The program then sent the file it to the attacker.
 ## Authors
 
-    Contributors names and contact info
+    By Vuong Dang
 
 ## Getting Started
 
    ### Dependencies
-       - Describe any prerequisites, libraries, OS version, etc., needed before installing program.
+       - Require Python3.
+            - Require two libaries: pynput and smtplib
+       - Work one Window, Mac and Linux.
+            - You have to run it as root in Mac because of security reason.
    ### Installing
-       - How/where to download your program.
-       - Any modifications needed to be made to files/folders.
+       - Pip:
+            - 
    ### Executing program
        - How to run the program
        - Step-by-step bullets
