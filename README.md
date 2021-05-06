@@ -13,12 +13,17 @@
             - Require two libaries: pynput and smtplib
        - Work one Window, Mac and Linux.
             - You have to run it as root in Mac because of security reason.
+       - In order to work, the attacker must have an gmail account and enable lesssecureapps login https://www.google.com/settings/security/lesssecureapps
+       - The attacker need to give the application Gmail login credential in order for the program to work!
+       - The program can sent message to any email(Yahoo, Yandex, Gmail, etc...)
    ### Installing
-       - Pip:
-            - 
+       - Git:
+
+       - Download the file from source.
    ### Executing program
-       - How to run the program
-       - Step-by-step bullets
+       - Make sure to have the dependencies ready.
+       - Make sure to be in the same folders or directory to the program.
+       - To run the program, enter the command "python3 main.py"
 
 ## Output
   The program should print out the log keys and also sent a text file of the log key to an attacker.
